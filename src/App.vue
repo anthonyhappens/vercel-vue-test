@@ -7,11 +7,6 @@
 </template>
 
 <script>
-// import config from "./config.js";
-// import HelloWorld from "./config.js";
-// console.log("config:", config);
-// console.log("config:", process.env.VUE_APP_CUSTOM_VARIABLE);
-
 import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
@@ -25,7 +20,7 @@ export default {
     };
   },
   async created() {
-    const data = await fetch("./config.json").then((res) => res.json());
+    const data = await fetch("./custom_config.json").then((res) => res.json());
     console.log("data:", data);
     if (!data) return;
 

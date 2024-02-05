@@ -7,7 +7,7 @@ module.exports = defineConfig({
   configureWebpack: {
     plugins: [
       new CopyWebpackPlugin({
-        patterns: [{ from: "src/assets/config.json", to: "." }],
+        patterns: [{ from: "src/assets/custom_config.json", to: "." }],
       }),
     ],
   },
